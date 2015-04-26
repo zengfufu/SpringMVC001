@@ -24,4 +24,20 @@
 		<servlet-name>springMvc</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping> 
+	
+<!-- 强制将请求到服务器的编码转成UTF-8 -->
+	<filter>
+    <filter-name>SetCharacterEncoding</filter-name>
+    <filter-class>
+        org.springframework.web.filter.CharacterEncodingFilter
+    </filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>utf-8</param-value><!--根据编码自修修改-->
+    </init-param>
+	</filter>
+	<filter-mapping>
+    <filter-name>SetCharacterEncoding</filter-name>
+    <url-pattern>/*</url-pattern>
+	</filter-mapping>
 </web-app>
