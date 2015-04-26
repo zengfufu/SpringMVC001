@@ -39,6 +39,12 @@
 	            <value>utf-8</value>    
 	        </property> 
     </bean> -->  
+     
+     <!-- 启用注解，com.controller.annotation 下的类都会使用注解，用注解的方式去扫描 -->
+    <context:component-scan base-package="com.controller.annotation"></context:component-scan>
+  	<!--   开启注解 -->
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"></bean>
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"></bean>
     
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/"/>
