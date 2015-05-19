@@ -39,6 +39,8 @@
 	            <value>utf-8</value>    
 	        </property> 
     </bean> -->  
+   	<!-- 静态资源访问 -->
+    <mvc:resources location="/js/" mapping="/js/**"/>
       <!-- 启用注解，com.controller.annotation 下的类都会使用注解，用注解的方式去扫描 -->
     <context:component-scan base-package="com.controller.annotation"></context:component-scan>
   	<!--   开启注解 -->

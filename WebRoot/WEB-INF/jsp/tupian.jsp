@@ -19,33 +19,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
   </head>
-  <script type="text/javascript">
-  		function adduser(){
-  		var form =document.forms[0];
-  		form.action="/SpringMVC001/user3/adduser"
-  		form.method="post";
-  		form.submit();
-  		}
-  	
-  	{age:"11"}
-  		
-  		
-  </script>
   
   <body>
-  
-  该界面是用来测试SpringMVC中参数传递的<br><br><br>
-    使用注解跳转到该页面   地址是http://localhost:8080/SpringMVC001/user3/adduser <br><br><br>
-    ${s}
-    
-    <form action="">
-    	姓名：<input type="text" name="username">
-    	年龄：<input type="text" name="age">
-    		<input type="button" value="添加" onclick="adduser()">
-    </form>
-    <h1>添加用户</h1>
-    <form action="">
-    
-    </form>
+    This is my JSP page.test <br>
+    <dir>
+       
+    </dir>
+    <img alt="tup" src="/SpringMVC001/js/Lighthouse.jpg">
   </body>
 </html>
