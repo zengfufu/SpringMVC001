@@ -16,4 +16,5 @@ public class HelloWorldController implements Controller{
 		return new ModelAndView("/index");
 	}
 
+
 }
